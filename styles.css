@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: rgba(0,0,0,1);
+    min-height: 100vh;
+    /* background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(100%, rgba(74,223,126,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4adf7e', GradientType=1 ); */
+}
+
+.container {
+    max-width: 1200px;
+    margin: -20px auto;
+    padding: 0px 40px;
+    flex-grow: 1;
+}
+
+.login{
+    background: #1DD760;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0;
+    text-align: center;
+    border-radius: .8rem;
+    padding: .25rem .6rem;
+}
+
+.logo {
+    height: 8rem;
+    width: 8rem;
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    max-width: 1000px;
+    padding: 0px 40px;
+    margin: 0px auto;
+}
+
+.text-info {
+    align-content: center;
+}
+
+.title-text {
+    line-height: .01em;
+    padding-bottom:2px;
+}
+
+.description-text {
+    font-weight: 500;
+    line-height: .1em;
+    font-size: 20px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+.semibold-text {
+    font-weight: 600;
+}
+
+.line {
+    width:5px;
+    background-color:white;
+    position: fixed;
+    top:8.55rem;
+    bottom:0;
+    left:15.5em;
+    height: 9.2rem;
+}
+
+.join-buttons{
+    display: block;
+    padding: 2rem 5rem;
+}
+
+.play-btn {
+    color: white;
+    padding: .5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+}
+
+.join-btn {
+    color: white;
+    padding: .6rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+}
