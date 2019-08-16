@@ -37,7 +37,7 @@ body {
     letter-spacing: 0;
     text-align: center;
     border-radius: .8rem;
-    padding: .25rem .6rem;
+    padding: .25rem .8rem;
 }
 
 .logo {
@@ -52,13 +52,18 @@ body {
 }
 
 .info {
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-grow: 1;
     max-width: 1000px;
     padding: 0px 40px;
     margin: 0px auto;
 }
 
 .text-info {
-    align-content: center;
+    position: relative;
+    width: 50%;
+    margin: auto;
 }
 
 .title-text {
@@ -90,7 +95,8 @@ body {
 }
 
 .join-buttons{
-    display: block;
+    /* display: flex; */
+    align-content: flex-end;
     padding: 2rem 5rem;
 }
 
@@ -106,12 +112,33 @@ body {
 }
 
 .join-btn {
+    background-color: #1DD760;
     color: white;
-    padding: .6rem 1rem;
+    padding: .6rem 1.2rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     border-radius: 1.5rem;
 }
+
+.join-buttons p {
+    padding: 0 3.8rem;
+}
+
+.album-covers {
+    width: 50%;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: auto;
+  align-self: center;
+}
+
+.album-covers img {
+    height: 150px;
+    width: 150px;
+    border-radius: 1.5rem;
+}
+
