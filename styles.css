@@ -202,11 +202,7 @@ body {
         display: flex;
         width: 100%;
         margin: 0px auto;
-        flex-direction: row;
-        align-items: flex-end;
-        align-self: flex-end;
-    }
-    .first-albums {
-        
+        flex-direction: row-reverse;
+        justify-content: center;
     }
 }
