@@ -7,13 +7,19 @@
 * {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    
 }
 
 body {
     padding: 0;
     margin: 0;
-    background: rgba(0,0,0,1);
     min-height: 100vh;
+    background-color: black;
+    background: url('https://i.imgur.com/xZL41k9.png') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
     /* background: -moz-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,0,0,1)), color-stop(51%, rgba(0,0,0,1)), color-stop(100%, rgba(74,223,126,1)));
     background: -webkit-linear-gradient(-45deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 51%, rgba(74,223,126,1) 100%);
@@ -52,8 +58,10 @@ body {
 }
 
 .info {
-    align-content: flex-start;
-    justify-content: space-between;
+    /* align-content: flex-start;
+    justify-content: space-between; */
+    display: flex;
+    flex-direction: row;
     flex-grow: 1;
     max-width: 1000px;
     padding: 0px 40px;
@@ -61,13 +69,11 @@ body {
 }
 
 .text-info {
-    position: relative;
-    width: 50%;
-    margin: auto;
+    flex: 1;
 }
 
 .title-text {
-    line-height: .01em;
+    line-height: 0%;
     padding-bottom:2px;
 }
 
@@ -128,12 +134,13 @@ body {
 }
 
 .album-covers {
-    width: 50%;
+    flex: 1;
+    width: 100%;
     display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: auto;
-  align-self: center;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    margin: 0px auto;
 }
 
 .album-covers img {
@@ -142,3 +149,64 @@ body {
     border-radius: 1.5rem;
 }
 
+.home-page-circle-1 {
+    position: absolute;
+    width: 25vw;
+    height: 25vw;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.1);
+    bottom: 5vw;
+    left: 70vw;
+    z-index: -1;
+  }
+  
+  .home-page-circle-2 {
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.1);
+    top: 10vh;
+    left: 15vw;
+    z-index: -1;
+  }
+  
+  .home-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width: 30vw;
+    height: 30vw;
+    bottom: 0;
+    right: 80vw;
+    z-index: -1;
+  }
+  
+  .home-page-circle-3::before {
+    content: '';
+    transform: translate(0%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.1);
+  }
+
+/* queries */
+@media (max-width: 770px){
+    .info {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    .album-covers {
+        display: flex;
+        width: 100%;
+        margin: 0px auto;
+        flex-direction: row;
+        align-items: flex-end;
+        align-self: flex-end;
+    }
+    .first-albums {
+        
+    }
+}
