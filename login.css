@@ -7,21 +7,26 @@
 }
 
 body {
-    background-color: white;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .container {
+    
     background: url('https://i.imgur.com/xZL41k9.png') no-repeat center center fixed;
+    
     background-size: cover;
     position: relative;
     width: 420px;
     max-width: 100%;
-    
+    z-index: 0;
 }
 
 .logo {
@@ -36,11 +41,98 @@ body {
 .form form{
     color: #9A9A9A;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
 }
 
-.form form input[type="text"]{
+.form form ::placeholder {
+    text-shadow: 2px 2px 8px black;
+}
+
+.form form input[type="text"],
+.form form input[type="password"]
+{
     font-size: 0.8rem;
     background: rgba(170, 170, 170,.20);
     border: 2px solid #ccc;
     padding: 12px 20px 12px 40px;
+    
 }
+
+button {
+	border-radius: 25px;
+	border: none;
+	background-color: #1DD760;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+    transition: transform 80ms ease-in;
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.fb {
+    border-radius: 25px;
+    font-size: 12px;
+    background-color: #3B5998;
+    padding: 10px 45px;
+}
+
+.guy-music {
+    position: absolute;
+    bottom: 0vw;
+    left: 5rem;
+    width: 60%;
+    height: 60%;
+    filter: opacity(40%);
+    z-index: -1;
+}
+
+  /* spotify bubbles */
+.home-page-circle-1 {
+    position: absolute;
+    width: 25%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.2);
+    bottom: 2rem;
+    left: 3rem;
+    z-index: -1;
+  }
+  
+
+  .home-page-circle-2 {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.2);
+    top: 2rem;
+    left: 13rem;
+    z-index: -1;
+  }
+  
+  .home-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width: 25%;
+    height: 20%;
+    bottom: 0;
+    right: 0rem;
+    z-index: -1;
+  }
+  
+  .home-page-circle-3::before {
+    content: '';
+    transform: translate(80%, 50%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(87, 255, 143, 0.2);
+  }
