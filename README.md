@@ -8,5 +8,11 @@
 
 ## The raw sketch designs:
 
-![landing_page] (https://imgur.com/i8096bA "landing page")
-![login_page] (https://imgur.com/tdPbQ16 "login page")
+![alt text][logo]
+
+[logo]: https://imgur.com/i8096bA "Logo Title Text 2"
+
+![alt text][logo]
+
+[logo]: https://imgur.com/tdPbQ16 "Logo Title Text 2"
+
