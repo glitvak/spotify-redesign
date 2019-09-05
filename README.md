@@ -8,5 +8,5 @@
 
 ##The raw sketch designs:
 
-![landing_page](https://imgur.com/i8096bA "landing page")
-![login_page](https://imgur.com/tdPbQ16 "login page")
+![landing_page](https://i.imgur.com/i8096bA.png "landing page")
+![login_page](https://i.imgur.com/tdPbQ16.png "login page")
