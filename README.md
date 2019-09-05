@@ -1,9 +1,9 @@
 
-#Spotify Redesign
-###By Gil Litvak
+#Spotify Redesign#
+###By Gil Litvak###
 
 
-###Created through my own created sketch designs that aimed to give Spotify a different twist to their current desgin utilizing already used color schemes.
+###Created through my own created sketch designs that aimed to give Spotify a different twist to their current desgin utilizing already used color schemes.###
 
 
 ##The raw sketch designs:
